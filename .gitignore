@@ -1,0 +1,6 @@
+*.spec
+sources.txt
+__pychache__/
+build/
+dist/
+
