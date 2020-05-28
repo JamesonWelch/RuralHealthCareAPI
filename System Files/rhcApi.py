@@ -52,7 +52,7 @@ def dataFrame(api_id, record):
     for i in range(call_range):
          
         client = Socrata("opendata.usac.org", None)
-        results = client.get(api_id, limit=40000, offset=offset)
+        results = client.get(api_id, limit=20000, offset=offset)
         
         results_df = pd.DataFrame.from_records(results)
         results_df.to_csv(filePath, sep="|", mode='a', header=False)
